@@ -13,10 +13,8 @@ namespace SeyahatProje.Controllers
         Context c = new Context();
         public ActionResult Index()
         {
-            var degerler= c.Hakkımızdas.ToList();
-            
-            
-            return View(degerler);
+            var degerler = c.Hakkımızdas.ToList();
+             return View(degerler);
 
         }
     }

@@ -38,11 +38,12 @@ body{
 	background:url(../images/head_bot.gif);
 }
 .wrap{
+
 	width:970px;
 	margin:0 auto;
 }
 .logo{
-	margin: 20px 0;
+	margin: 13px 0;
 	float:left;
 }
 .logo h1{
@@ -149,6 +150,7 @@ body{
 /*--content--*/
 .header-banner{
 	background: #f0f0f0;
+	height:500px;
 }
 .banner-left{
 	width: 280px;
@@ -476,14 +478,17 @@ span.doller{
 	font-size: 13px;
 }
 /*--- slider-css --*/
-.slider{
-	    background-color: #F5F5F5;
-    position: relative;
-    box-shadow: 0 0 5px #aaa;
-    -webkit-box-shadow: 0 0 5px #aaa;
-    -moz-box-shadow: 0 0 5px #aaa;
-    -o-box-shadow: 0 0 5px #aaa;
-	padding:1%;
+.slider {
+	background-color: #F5F5F5;
+	overflow: hidden;
+	width: 700px;
+	height: 400px;
+	position: absolute;
+	box-shadow: 0 0 5px #aaa;
+	-webkit-box-shadow: 0 0 5px #aaa;
+	-moz-box-shadow: 0 0 5px #aaa;
+	-o-box-shadow: 0 0 5px #aaa;
+	margin-bottom:100px;
 }
 .rslides {
   position: relative;
@@ -491,7 +496,8 @@ span.doller{
   overflow: hidden;
   width: 100%;
   padding: 0;
-  margin: 0;
+ 
+  margin-bottom:50px;
   }
 .rslides li {
   -webkit-backface-visibility: hidden;
@@ -512,6 +518,7 @@ span.doller{
   float: left;
   width: 100%;
   border: 0;
+  overflow:hidden;
   }
 .callbacks_nav {
   position: absolute;
@@ -542,6 +549,7 @@ span.doller{
 }
 .header_bottom_right_images {
     width: 61%;
+
 }
 .banner-left {
     width: 36%;
