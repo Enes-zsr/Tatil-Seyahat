@@ -13,7 +13,7 @@ namespace SeyahatProje.Controllers
         Context c = new Context();
         public ActionResult Index()
         {
-            var degerler = c.Blogs.ToList();
+            var degerler = c.Blogs.Take(4).ToList();
             return View(degerler);
         }
         public ActionResult About()
@@ -28,6 +28,21 @@ namespace SeyahatProje.Controllers
         public PartialViewResult Partial2()
         {
             var deger = c.Blogs.Where(x => x.ID == 1).ToList();
+            return PartialView(deger);
+        }
+        public PartialViewResult Partial3()
+        {
+            var deger = c.Blogs.Take(10).ToList();
+            return PartialView(deger);
+        }
+        public PartialViewResult Partial4()
+        {
+            var deger = c.Blogs.Take(3).ToList();
+            return PartialView(deger);
+        }
+        public PartialViewResult Partial5()
+        {
+            var deger =c.Blogs.Take(3).OrderByDescending(x=>x.ID).ToList();
             return PartialView(deger);
         }
     }
