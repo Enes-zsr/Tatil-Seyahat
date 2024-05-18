@@ -15,6 +15,9 @@ namespace SeyahatProje.Models.Sınıflar
         public DbSet<Hakkımızda> Hakkımızdas { get; set; }
         public DbSet<İletişim> iletişims { get; set; }
         public DbSet<Yorumlar> Yorumlars { get; set; }
+        public DbSet<TarihiYerler>tarihiYerlers { get; set; }
+        public DbSet<DogalGuzellikler>DogalGuzellikler { get; set; }
+
 
 
 

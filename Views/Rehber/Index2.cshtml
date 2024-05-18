@@ -1,0 +1,63 @@
+﻿@using SeyahatProje.Models.Sınıflar
+
+@model List<SeyahatProje.Models.Sınıflar.DogalGuzellikler>
+
+
+
+
+@{
+    ViewBag.Title = "Index2";
+    Layout = "~/Views/Shared/_Testlayout.cshtml";
+}
+
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <link href="~/Resources/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="~/Resources/css/style2.css" rel='stylesheet' type='text/css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Personal Blog Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template,
+	Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!----webfonts---->
+    <link href='http://fonts.googleapis.com/css?family=Oswald:100,400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,300italic' rel='stylesheet' type='/text/css'>
+    <!----//webfonts---->
+
+
+</head>
+<body>
+    <!---header---->
+    <div class="header">
+        <div class="container">
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!--/header-->
+    <div class="single">
+        <div class="container">
+            <div class="col-md-8 single-main" >
+                @foreach (var x in Model)
+                {
+                    <div class="single-grid" style="padding-left:25px;">
+                        <img src="@x.PlaceImage" alt="" style="margin-bottom: 20px; margin-left:150px" />
+                        <a style="margin-left: 320px; width: 1200px; font-weight: 300; font-family: Arial; font-size: 30px;" href ="/Blog/BlogDetay/@x.ID">@x.Baslik</a>
+                        <p style="margin-left:145px; width:700px;">
+                            @x.Aciklama
+                        </p>
+                    </div>
+
+                    <br />
+                    <br />
+                    <br />
+
+                }
+
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
+</body>
+</html>

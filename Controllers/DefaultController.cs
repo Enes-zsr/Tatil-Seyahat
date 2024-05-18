@@ -13,7 +13,7 @@ namespace SeyahatProje.Controllers
         Context c = new Context();
         public ActionResult Index()
         {
-            var degerler = c.Blogs.Take(4).ToList();
+            var degerler = c.Blogs.Take(10).ToList();
             return View(degerler);
         }
         public ActionResult About()

@@ -1,0 +1,82 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Testlayout.cshtml";
+}
+
+<div class="inner-content">
+    <div class="container">
+
+
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d17030.504616879927!2d28.96572721217715!3d41.01220786358947!3m2!1i1024!2i768!4f13.1!5e0!3m2!1str!2str!4v1715929529909!5m2!1str!2str" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </div>
+
+
+        <!--Contact Start-->
+
+        <div class="contact-wrap">
+
+            <div class="contact-form">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h3 style="font-size:36px;font-family:'Bell MT'">İletişim Formu</h3>
+                        <br />
+                        <!-- Contact FORM -->
+                        <form id="contact" method="post">
+
+                            <!-- END IF MAIL SENT SUCCESSFULLY -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="name" name="AdSoyad" placeholder="Ad & Soyad">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="email" name="Mail" placeholder="Mail">
+                                    </div>
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" name="Konu" placeholder="Konu">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="input-group">
+                                        <textarea name="Mesaj" class="form-control" placeholder="Mesaj..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 mt-30">
+                                    <input type="submit" value="Gönder" class="sub">
+                                </div>
+                            </div>
+                        </form>
+                        <!-- END Contact FORM -->
+                    </div>
+                </div>
+            </div>
+            <div class="row contactInfo">
+                <div class="col-md-12">
+
+                    <br />
+                </div>
+                <div class="col-sm-4" "> <i class="fa fa-phone" aria-hidden="true"></i> <a href="#">(777) 123 4567</a> </div>
+
+
+
+                <div class="col-sm-4">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                    <p class="mt-15">
+                        Türkiye/İstanbul
+
+                    </p>
+                </div>
+                <div class="col-sm-4"> <i class="fa fa-envelope" aria-hidden="true"></i><a href="#">Kolay@seyahat.net</a> </div>
+            </div>
+
+        </div>
+
+        <!--Contact End-->
+    </div>
+</div>
+
+
+<!--Gallery End-->

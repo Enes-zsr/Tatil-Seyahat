@@ -1,9 +1,8 @@
 ﻿
 <div class="content-form">
-    <h3>Bir yorum yap...</h3>
- 
     <form method="post">
-        <input type="text" placeholder="ID" name="Blogid"   value="@ViewBag.deger" required/>
+        <input type="text" placeholder="ID" name="Blogid" value="@ViewBag.deger" style="visibility:hidden"required />
+        <h3>Bir yorum yap...</h3>
         <input type="text" placeholder="Kullanıcı Adı" name="Kullaniciadi" required />
         <input type="text" placeholder="Mail Adresi" name="Mail" required />
         <textarea placeholder="Yorum" name="Yorum"></textarea>

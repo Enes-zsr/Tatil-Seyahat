@@ -12,12 +12,25 @@
 <div class="content">
     <div class="wrap">
         <div class="about">
-            <h3>Hakkımızda</h3>
+            <h2 style="text-align:center">Hakkımızda</h2>
             @foreach (var x in Model)
             {
-                <img src="@x.FotoUrl" alt="" />              
-                <p>@x.Aciklama</p>
+                <img src="@x.FotoUrl" alt="" />
             }
+            <h4>Hoş Geldiniz!</h4>
+            <br />
+            <p>Biz, seyahate ve keşfetmeye tutkulu bir ekibiz. Dünyanın dört bir yanındaki en güzel, en ilginç ve en heyecan verici yerleri keşfetmek için yola çıktık. Tatil seyahat blogumuz, sizlere ilham vermek, yeni destinasyonlar hakkında bilgi sunmak ve seyahatlerinizde yardımcı olmak amacıyla kuruldu.</p>
+            <br />
+            <h4>Neler Yapıyoruz?</h4>
+            <br />
+            <p>Blogumuzda, dünyanın her köşesinden seyahat deneyimlerini, tatil ipuçlarını ve rehberlerini bulabilirsiniz. İster macera arayan bir gezgin, ister rahatlatıcı bir tatil arayan biri olun, herkes için bir şeyler var. Doğal güzelliklerden tarihi yerlere, gurme lezzet duraklarından gizli kalmış cennet köşelere kadar pek çok farklı konuyu ele alıyoruz.</p>
+            <br />
+            <h4>Misyonumuz</h4>
+            <br />
+            <p>Amacımız, seyahat etmeyi seven herkes için bir ilham kaynağı ve rehber olmak. Size, bütçenize ve ilgi alanlarınıza uygun seyahat önerileri sunarak, dünyayı daha erişilebilir ve keşfedilebilir kılmak istiyoruz. Ayrıca, seyahat ederken çevreye duyarlı olmayı ve yerel kültürlere saygı göstermeyi teşvik ediyoruz.</p>
+            <br />
+            @*<p>@x.Aciklama</p>*@
+
 
         </div>
     </div>

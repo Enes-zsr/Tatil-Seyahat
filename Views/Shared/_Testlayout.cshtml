@@ -13,36 +13,38 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
     <title>Free Easy-Trip Website Template | Home :: w3layouts</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/Resources/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Resources/css/style4.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="~/Resources/css/style1.css" type="text/css" media="all" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="~/web/css/slider.css" rel="stylesheet" type="text/css" media="all" />
-    <script src="~/web/js/jquery.min.js"></script>
-    <script src="~/web/js/responsiveslides.min.js"></script>
+    <link href="~/Resources/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="~/Resources/js/jquery.min.js"></script>
+    <script src="~/Resources/js/responsiveslides.min.js"></script>
 
     <script>
-    // You can also use "$(window).load(function() {"
-    $(function () {
-      // Slideshow 1
-      $("#slider1").responsiveSlides({
-         auto: true,
-		 nav: true,
-		 speed: 500,
-		 namespace: "callbacks",
-      });
-    });
+        // You can also use "$(window).load(function() {"
+        $(function () {
+            // Slideshow 1
+            $("#slider1").responsiveSlides({
+                auto: true,
+                nav: true,
+                speed: 500,
+                namespace: "callbacks",
+            });
+        });
     </script>
 </head>
 <body>
+  
     <div class="header">
+     
         <div class="wrap">
-            <div class="logo"><a href="index.html"><img src="~/web/images/logo.png" alt="" /></a></div>
-            <div class="con-right">
-                <div class="grid1-l-img">
-                    <img src="~/web/images/contact.png" alt="">
-                </div>
-                <div class="grid1-l-desc">
-                    <p>İletişim : +90 532 532 53 32</p>
-                </div>
+            <div class="logo"><a href="~/Views/Default/Index.cshtml"><img src="~/Resources/images/logo.png" alt="" /></a></div>
+
+            <div class="con-right" style="float:left;  ">
+                <h1 class="logi" style="background-image: url(../../Resources/images/giphy.gif); background-size: cover; background-position: center; color: transparent; background-clip: text; -webkit-background-clip: text; font-size:50px;font-weight:800; display:inherit; margin-left:195px; margin-top:-10px;">TATİL & SEYAHAT</h1>
                 <div class="clear"></div>
             </div>
             <div class="clear"></div>
@@ -54,19 +56,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <li><a href="/Default/Index/">Ana Sayfa</a></li>
                 <li><a class="hsubs" href="/About/Index/">Hakkımızda</a></li>
                 <li>
-                    <a class="hsubs" href="destinations.html">Rehber</a>
+                    <a class="hsubs" href="/Rehber/Index2">Rehber</a>
                     <ul class="subs">
-                        <li><a href="#">Oteller</a></li>
-                        <li><a href="#">Restaurantlar</a></li>
-                        <li><a href="#">Müzeler</a></li>
+                        <li><a href="/Rehber/Index2">Doğal Güzellikler</a></li>
+                        <li><a href="/Rehber/Index">Tarihi Yerler</a></li>
                     </ul>
                 </li>
-                <li><a class="hsubs" href= "/Blog/Index/">Bloğum</a></li>
-                <li><a href="contact.html">İletişim</a></li>
+                <li><a class="hsubs" href="/Blog/Index">Bloğum</a></li>
+                <li><a href="/Contact/Index">İletişim</a></li>
             </ul>
         </div>
     </div>
-   
+
     <div class"content">
         @RenderBody()
     </div>
