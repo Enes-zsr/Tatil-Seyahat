@@ -14,6 +14,9 @@ namespace SeyahatProje.Controllers
 
         Context c = new Context();
         BlogYorum by = new BlogYorum();
+
+        public Context Context { get; set; }
+
         public ActionResult Index()
         {
             //var bloglar=c.Blogs.ToList();
@@ -46,5 +49,6 @@ namespace SeyahatProje.Controllers
             c.SaveChanges();
             return PartialView();
         }
+      
     }
 }

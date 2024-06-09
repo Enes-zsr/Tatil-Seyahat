@@ -8,7 +8,7 @@
 <html>
 
 <head>
-    <title> Master login Form Responsive Widget Template  :: w3layouts</title>
+    <title>Admin Giriş</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content=" Master  Login Form Widget Tab Form,Login Forms,Sign up Forms,Registration Forms,News letter Forms,Elements" />
@@ -28,8 +28,8 @@
             <div class="mail-form-agile">
                 @using (Html.BeginForm("Login", "GirisYap", FormMethod.Post))
                 {
-                    <input type="text" name="kullanici" placeholder="Kullanıcı Adı..." required="" />
-                    <input type="password" name="Sifre" class="padding" placeholder="Şifre..." required="" />
+                    <input type="text" name="kullanici" id="admin" placeholder="Kullanıcı Adı..." required="" />
+                    <input type="password" name="Sifre" id="sifre" class="padding" placeholder="Şifre..." required="" />
                     <input type="submit" value="Giriş Yap">
                 }
             </div>

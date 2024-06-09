@@ -5,6 +5,8 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeyahatProje", "SeyahatProje.csproj", "{E3CD0009-7B38-4CE9-93D0-31D9AD730162}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeyahatProjeControllerMethodTest", "..\SeyahatProjeControllerMethodTest\SeyahatProjeControllerMethodTest.csproj", "{F759982B-E06B-4560-A6E3-31BD887C2B81}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E3CD0009-7B38-4CE9-93D0-31D9AD730162}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3CD0009-7B38-4CE9-93D0-31D9AD730162}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3CD0009-7B38-4CE9-93D0-31D9AD730162}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F759982B-E06B-4560-A6E3-31BD887C2B81}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F759982B-E06B-4560-A6E3-31BD887C2B81}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F759982B-E06B-4560-A6E3-31BD887C2B81}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F759982B-E06B-4560-A6E3-31BD887C2B81}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
