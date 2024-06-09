@@ -15,6 +15,11 @@ jobs:
     - name: Kodu Çek
       uses: actions/checkout@v2
 
+    - name: Visual Studio Kurulumu
+      run: |
+        choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.WebBuildTools --includeRecommended --includeOptional"
+        choco install selenium-chromedriver
+
     - name: .NET Core Kur
       uses: actions/setup-dotnet@v2
       with:
@@ -26,5 +31,5 @@ jobs:
     - name: Build Yap
       run: dotnet build --configuration Release --no-restore
 
-    - name: Testleri Çalıştır
-      run: dotnet test --no-build --verbosity normal
+    - name: Selenium Testlerini Çalıştır
+      run: dotnet test --no-build --verbosity normal --filter TestCategory=Selenium
