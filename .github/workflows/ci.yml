@@ -1,0 +1,30 @@
+name: .NET Core CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Kodu Çek
+      uses: actions/checkout@v2
+
+    - name: .NET Core Kur
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: '5.0.x'
+
+    - name: Bağımlılıkları Yükle
+      run: dotnet restore
+
+    - name: Build Yap
+      run: dotnet build --configuration Release --no-restore
+
+    - name: Testleri Çalıştır
+      run: dotnet test --no-build --verbosity normal
