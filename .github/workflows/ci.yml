@@ -15,11 +15,10 @@ jobs:
     - name: Kodu Çek
       uses: actions/checkout@v2
 
-    - name: Visual Studio ve Selenium Kurulumu
+    - name: Visual Studio ve Gerekli Bileşenleri Kur
       run: |
-        choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.WebBuildTools --includeRecommended --includeOptional"
-        choco install selenium-chromedriver
-        choco install googlechrome
+        choco install visualstudio-installer
+        vs_installer.exe install --quiet --wait --norestart --add Microsoft.VisualStudio.Workload.ManagedDesktopBuildTools Microsoft.VisualStudio.Workload.NetCoreBuildTools Microsoft.VisualStudio.Component.WebDeploy Microsoft.VisualStudio.ComponentGroup.Web Microsoft.VisualStudio.ComponentGroup.WebToolsExtensions Microsoft.VisualStudio.Component.WebBuildTools Microsoft.VisualStudio.Component.IISExpress Microsoft.VisualStudio.Component.Client.Web Microsoft.VisualStudio.ComponentGroup.AzureFunctions --includeRecommended --includeOptional
 
     - name: .NET Core Kur
       uses: actions/setup-dotnet@v2
