@@ -15,10 +15,11 @@ jobs:
     - name: Kodu Çek
       uses: actions/checkout@v2
 
-    - name: Visual Studio Kurulumu
+    - name: Visual Studio ve Selenium Kurulumu
       run: |
         choco install visualstudio2019buildtools --package-parameters "--add Microsoft.VisualStudio.Workload.WebBuildTools --includeRecommended --includeOptional"
         choco install selenium-chromedriver
+        choco install googlechrome
 
     - name: .NET Core Kur
       uses: actions/setup-dotnet@v2
@@ -32,4 +33,8 @@ jobs:
       run: dotnet build --configuration Release --no-restore
 
     - name: Selenium Testlerini Çalıştır
-      run: dotnet test --no-build --verbosity normal --filter TestCategory=Selenium
+      run: |
+        echo "Selenium testlerini çalıştır"
+        python ./tests/AdminLoginTest.py
+        python ./tests/BirimTestleri.py
+        python ./tests/test_AdminPanel.py
